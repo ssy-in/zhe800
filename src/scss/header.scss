@@ -1,0 +1,148 @@
+//head三部分
+//header-topbar 上
+#head-topbar {
+  width: 100%;
+  height: 30px;
+  background: #eee;
+}
+.headnav {
+  line-height: 30px;
+  div {
+    float: right;
+    margin: 0 5px;
+    i {
+      color: red;
+    }
+    span {
+      color: #999;
+    }
+  
+  }
+}
+.toolbar_sepera_line {
+  margin: 0 20px;
+  color: #ddd;
+}
+#toolbarlogin i {
+  cursor: pointer;
+}
+#toolbarcart {
+  strong {
+    color: rgb(167, 14, 14);
+  }
+}
+
+//header 中
+#header {
+  margin-top: 30px;
+}
+.logo {
+  float: left;
+  display: block;
+}
+.search {
+  float: left;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 20px;
+  border: 2px solid #e60044;
+  border-right: 0;
+  border-top-left-radius: 3px;
+
+  span {
+    float: left;
+    width: 94px;
+    height: 35px;
+    padding-right: 17px;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    font-family: "microsoft yahei";
+    background: url(https://status.tuanimg.com/statics/zhe/common/img/index-common.png) -52px -34px no-repeat;
+  }
+  .search-input {
+    width: 385px;
+    height: 20px;
+    margin-top: 7px;
+    padding: 5px 0 5px 10px;
+    background: #fff;
+    font-family: "微软雅黑";
+    float: left;
+    border: 0;
+  }
+  .sub {
+    width: 48px;
+    height: 20px;
+    border: 0;
+    margin-top: 7px;
+    background: url(https://status.tuanimg.com/statics/zhe/common/img/index-common.png) -34px 0 no-repeat;
+  }
+  .search-right {
+    position: absolute;
+    top: -2px;
+    right: -15px;
+    width: 15px;
+    height: 39px;
+    background: url(https://status.tuanimg.com/statics/zhe/common/img/index-common.png) 0px -34px no-repeat;
+  }
+}
+
+.links {
+  float: right;
+  a {
+    display: block;
+    img {
+      margin-top: 5px;
+    }
+  }
+}
+//heder_nav 下
+#heder_nav {
+  width: 100%;
+  height: 42px;
+  margin-top:15px;
+  font-family: "microsoft yahei";
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+  ul {
+    line-height: 40px;
+    text-align: center;
+  }
+
+  a {
+    float: left;
+    width: 130px;
+
+    li {
+      color: #666;
+    }
+    li:hover {
+      box-shadow: 8px 0 7px -7px #ccc, -8px 0 7px -7px #ccc;
+      border-bottom: 2px solid #e60044;
+    }
+  }
+  a:first-child {
+    width: 150px;
+    background: rgb(216, 4, 50);
+    li {
+      line-height: 42px;
+      color: #fff;
+      border: 0;
+    }
+  }
+  a:last-child {
+    img {
+      display: none;
+    }
+    position: relative;
+  }
+  a:last-child:hover {
+    img {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      display: block;
+      z-index: 999;
+    }
+  }
+}

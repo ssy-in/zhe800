@@ -1,0 +1,62 @@
+//footer三部分
+//footer  上
+#footer {
+  width: 100%;
+  background: #eee;
+  border-top: 3px solid rgb(197, 0, 0);font: 12px/30px '微软雅黑';
+  margin-top:50px;
+}
+#about {
+  width: 100%;
+}
+
+#about ul {
+  text-align: center;
+  line-height: 30px;
+  .question {
+    width: 230px;
+  }
+}
+
+#about ul li {
+  float: left;
+  width: 200px;
+  padding-top: 28px;
+  padding-left: 60px;
+  span a {
+    color: rgb(224, 60, 60);
+  }
+  span:first-child {
+    font-size: 60px;
+    color: rgb(226, 80, 80);
+    margin-bottom: 14px;
+  }
+ 
+}
+#about ul li:first-child {
+  padding-left: 0px;
+  width: 140px;
+}
+//friendlink 中
+.friendlink {
+    width: 750px;
+    margin: 0 auto;
+    >div{
+    float: left;
+    
+      ul li a{
+      float: left;
+      margin-right:30px;
+      line-height: 30px;
+      }
+    }
+}
+//foot-cont  下
+.footer-cont{
+    text-align: center;
+    line-height: 30px;
+}
+.footer-img{
+    img{   margin: 0 auto;}
+ 
+}

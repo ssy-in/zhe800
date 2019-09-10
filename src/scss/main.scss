@@ -1,0 +1,438 @@
+    //main
+    //banner
+#banner {
+  width: 100%;
+}
+#head-wrapper {
+  border: 1px solid #eee;
+}
+//banner部分左侧 列表
+#banner_nav {
+  float: left;
+  width: 150px;
+  text-align: center;
+  font: 14px/29px "microsoft yahei";
+}
+#banner_nav > ul {
+  height: 304px;
+  position: relative;
+  > li {
+    border-bottom: 1px solid #eee;
+    margin: 0 6px;
+    > a {
+      color: #000;
+    }
+    > a:hover {
+      text-decoration: underline !important;
+    }
+  }
+  > li:last-child {
+    border-bottom: 0px;
+  }
+  > li:hover > a {
+    color: rgb(251, 51, 51);
+  }
+  .nav-list {
+    font-size: 12px;
+  }
+  .nav-list:hover > a {
+    color: #000;
+  }
+  .nav-list > a:hover {
+    text-decoration: none !important;
+    color: rgb(251, 51, 51);
+  }
+}
+//隐藏的二级导航
+//隐藏的导航框
+.banner_hidelist {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 370px;
+  height: 304px;
+  padding: 0 0 0 13px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 100;
+  display: none;
+}
+//左边
+.banner_hidelist_left {
+  float: left;
+  width: 197px;
+  > p {
+    text-align: left;
+    a {
+      color: rgb(251, 51, 51) !important;
+    }
+  }
+  > hr {
+    margin: 0;
+  }
+  ul li {
+    display: block;
+    float: left;
+    width: auto;
+    height: 12px;
+    margin: 10px 0 6px 0;
+    border: 0;
+    line-height: 14px;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    background-color: #fff;
+    padding: 0 0 0 6px;
+    > a:hover {
+      color: rgb(251, 51, 51) !important;
+    }
+    > a {
+      display: block;
+      text-align: left;
+      float: left;
+      margin-right: 15px;
+    }
+  }
+}
+.addRed {
+  color: rgb(251, 51, 51) !important;
+}
+//右边
+.banner_hidelist_right {
+  float: left;
+  width: 152px;
+  height: 290px;
+  padding: 6px 10px 0 11px;
+  vertical-align: middle;
+  ul li {
+    margin-bottom: 3px;
+  }
+  img {
+    width: 130px;
+    height: 90px;
+  }
+  ul li:hover img {
+    border: 1px solid red;
+  }
+}
+#banner_nav ul li:hover .banner_hidelist {
+  display: block;
+}
+//banner部分右侧 图片
+#rigt_wrapper {
+  float: right;
+  width: 1048px;
+  height: 304px;
+  position: relative;
+  background: #eee;
+}
+//左边
+.left-banner {
+  float: left;
+  width: 950px;
+  height: 304px;
+  position: relative;
+  ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+    img{
+        width: 950px;
+        height: 304px;
+        display: block;
+    }
+  }
+  ol {
+    position: absolute;
+    bottom: 20px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    li {
+      float: left;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      margin-right: 5px;
+      border-radius: 50%;
+      text-indent: -999em;
+      cursor: pointer;
+  }
+  }
+}
+
+//右边
+#right-banner {
+  float: left;
+  width: 98px;
+  height: 304px;
+  z-index: 999;
+  background: #fff;
+  font: 14px/18px "microsoft yahei";
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  div {
+    width: 80px;
+    height: 80px;
+    margin: 15px 10px;
+  }
+  a {
+    color: rgb(246, 50, 50);
+    span {
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      color: rgb(246, 50, 50);
+    }
+    img {
+      width: 60px;
+      height: 60px;
+      margin: 0 10px;
+    }
+  }
+}
+    //品牌精选
+.brand_infor {
+  padding: 40px 0 3px 0;
+  border-bottom: 1px solid red;
+  >span>img {
+    display: inline-block;
+    vertical-align:bottom;
+  }
+}
+.brand_count{
+  vertical-align:bottom;
+  display:inline-block;
+      font-size: 14px;
+}
+.brand_infor_cat {
+  line-height: 28px;
+  float: right;
+  margin-top: 5px;
+  a {
+    margin: 0 7px;
+  }
+  span img{
+      display: inline-block;
+    vertical-align:middle;
+    margin-left: 13px
+   }
+}
+//红点
+.circle{
+    margin-left: 5px;
+    vertical-align:middle;
+    display:inline-block;
+    width: 6px;height: 6px;
+    background: red
+}
+//最后一个红底选项
+.brand_infor_more{
+display: inline-block;
+  background: #ff404c;
+  padding: 0 10px;
+  color: #fff !important;
+}
+//3个图片
+.brand_hot ul{
+  margin-bottom:10px;
+  }
+.brand_hot ul li a{
+    float: left;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 392px;
+        height: 200px;
+    }
+   span{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    font: 12px/25px '微软雅黑';
+    text-align: center;
+    color: #FFF;
+    background: rgba(5,8,9,.45);
+   }
+}
+//后两张图右边距
+.fir_bor{
+  margin-right: 8px;
+}
+//阴影
+.brand_hot ul li a:hover{
+  box-shadow: 5px 5px 10px #ddd,-5px 5px 10px #ddd;
+}
+//下面logo图
+.banner_li{
+  float: left;
+  width: 116px;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  a>i{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    color: #ddd
+  }
+}
+    //限时秒杀
+.ms_infor_cat{
+a{display: block;
+  float: left;
+  margin: 0;
+  padding:0 7px;
+  color: #000;
+  font-size: 12px
+}
+a:hover{
+  color: #FFF;
+  background: #ff404c
+}
+}
+//衣服列表
+.clothes-list{
+  li{
+    float: left;
+    width: 185px;
+    height: 250px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-right:18px;
+    a{
+      img{
+        width: 185px;
+        height: 185px;
+      }
+      p{
+        color: #ff404c
+      }
+      strong{
+        color: #666;
+        font-size: 12px
+      }
+    }
+  }
+  li:last-child{
+    margin: 0;
+  }
+  li:hover{
+    box-shadow: 7px -0px 3px #ddd,-7px 0px 3px #ddd;
+  }
+}
+    //热销推荐
+.pic-list{
+  li{
+    float: left;
+    margin-right:10px;
+  }
+  li:last-child{
+    margin: 0;
+  }
+  li:hover{
+    box-shadow: 5px 5px 10px #ddd,-5px 5px 10px #ddd;
+  }
+}
+
+    /* 数据部分 */
+#index-cont{
+    background:#f2f2f2;
+}
+.index-data ul li{
+  width: 283px;
+  height: 345px;
+  float: left;
+  margin: 0 8px 30px;
+  position: relative;
+  z-index: 100;
+  a{
+    img{
+      width: 283px;
+      height: 283px;
+    }
+  }
+  h4{
+  width: 263px;
+    padding: 0 8px 2px 12px;
+    height: 34px;
+    i{
+      font-size: 12px
+    }
+    del{
+      font-size: 16px;
+    }
+  }
+  >div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  h4{
+    float: left;
+    >a{
+      width: 283px;
+      height: 20px;
+      background-color: #333;
+    background: rgba(51,51,51,.5);
+    position: absolute;
+    left: 0;
+    bottom: 62px;
+    font: 12px/20px "microsoft yahei";
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: none;
+    z-index: 102;
+    }
+  }
+}
+//底部隐藏块
+.bottom-word{
+  width:283px;
+  padding: 2px 8px 2px 12px;
+    position: relative;
+    background-color: #fff;
+    height: 25px;
+    line-height: 25px;
+    box-shadow: 5px 5px 10px #ddd ;
+    left: 0;
+    font-family: "Microsoft Yahei";
+    font-size: 12px;
+     display: none; 
+    span{
+      color: #ff6767;
+    line-height: 26px;
+    display: inline-block;
+    font-family: 'Microsoft Yahei';
+    }
+    i{
+      display: block;
+    top: 0;
+    border-top: 1px dotted #C1C1C1;
+    width: 98%;
+    position: absolute;
+    left: 1%;
+    }
+    a{
+      float: right;
+    color: #999;
+    }
+}
+//鼠标经过阴影
+.index-data ul li:hover{
+  box-shadow: 5px 5px 10px #ddd,-5px 5px 10px #ddd;
+  .bottom-word{
+    display: block
+  }
+  h4{
+    >a{
+      display: block
+    }
+  }
+}
